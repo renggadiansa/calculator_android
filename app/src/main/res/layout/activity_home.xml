@@ -48,154 +48,103 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        style="@style/buttonRow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/buttonRow">
 
         <Button
             style="@style/buttonNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="allClearAction"
-            android:text="AC"
             android:textColor="@color/red"
-            tools:ignore="TextContrastCheck" />
+            android:onClick="allClearAction"
+            android:text="AC"/>
         <Button
             style="@style/buttonNumber"
             android:textColor="@color/red"
             android:onClick="backSpaceAction"
-            android:text="⌫"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+            android:text="⌫"/>
         <Button
             style="@style/buttonNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:text="" />
         <Button
             style="@style/buttonOperator"
-            android:text="/"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="/"/>
 
     </LinearLayout>
 
     <LinearLayout
-        style="@style/buttonRow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/buttonRow">
 
         <Button
             style="@style/buttonNumber"
-            android:text="7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="7"/>
         <Button
             style="@style/buttonNumber"
-            android:text="8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="8"/>
         <Button
             style="@style/buttonNumber"
-            android:text="9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="9" />
         <Button
             style="@style/buttonOperator"
-            android:text="x"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="x"/>
 
     </LinearLayout>
 
     <LinearLayout
-        style="@style/buttonRow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/buttonRow">
 
         <Button
             style="@style/buttonNumber"
-            android:text="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="4"/>
         <Button
             style="@style/buttonNumber"
-            android:text="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="5"/>
         <Button
             style="@style/buttonNumber"
-            android:text="6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="6" />
         <Button
             style="@style/buttonOperator"
-            android:text="-"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="-"/>
 
     </LinearLayout>
 
     <LinearLayout
-        style="@style/buttonRow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/buttonRow">
 
         <Button
             style="@style/buttonNumber"
-            android:text="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="1"/>
         <Button
             style="@style/buttonNumber"
-            android:text="2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="2"/>
         <Button
             style="@style/buttonNumber"
-            android:text="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="3" />
         <Button
             style="@style/buttonOperator"
-            android:text="+"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="+"/>
 
     </LinearLayout>
 
     <LinearLayout
-        style="@style/buttonRow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/buttonRow">
 
         <Button
             style="@style/buttonNumber"
-            android:text="."
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="."/>
         <Button
             style="@style/buttonNumber"
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+            android:text="0"/>
         <Button
             style="@style/buttonNumber"
-            android:layout_width="146dp"
             android:layout_weight="2"
             android:background="@color/orange"
+            android:textSize="40sp"
             android:onClick="equalsAction"
-            android:text="="
-            android:textSize="15sp" />
+            android:text="=" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/history"
-        android:layout_width="wrap_content"
+        android:layout_width="430dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:padding="10dp"
