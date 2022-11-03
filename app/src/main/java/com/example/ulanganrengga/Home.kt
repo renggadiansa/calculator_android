@@ -66,6 +66,7 @@ class Home : AppCompatActivity() {
         val length = workingsTV.length()
         if(length > 0)
             workingsTV.text = workingsTV.text.subSequence(0, length - 1)
+        jawaban.add("$length")
     }
 
     fun equalsAction(view: View)
@@ -84,7 +85,7 @@ class Home : AppCompatActivity() {
 
         val result = addSubtractCalculate(timesDivision)
         return result.toString()
-        jawaban.add("$timesDivision")
+        jawaban.add("$result")
     }
 
     private fun addSubtractCalculate(passedList: MutableList<Any>): Float
@@ -155,6 +156,7 @@ class Home : AppCompatActivity() {
         }
 
         return newList
+        //jawaban.add("$newList")
     }
 
     private fun digitsOperators(): MutableList<Any>
@@ -178,7 +180,7 @@ class Home : AppCompatActivity() {
 
         return list
 
-        jawaban.add("$currentDigit")
+        jawaban.add("$list")
     }
 
 }

@@ -1,10 +1,12 @@
 package com.example.ulanganrengga
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 
 class History : AppCompatActivity() {
@@ -16,6 +18,14 @@ class History : AppCompatActivity() {
         val message = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE)
         val listView = findViewById<ListView>(R.id.listView)
         listView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, jawaban)
+
+        val button = findViewById(R.id.btnclear) as Button
+
+        button.setOnClickListener{
+            listView.adapter = null
+        }
+
+
 
 
     }
